@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:getx_sample/screens/AccountPage/AccountPage.dart';
-import 'package:getx_sample/screens/CategoryPage/CategoryPage.dart';
-import 'package:getx_sample/screens/HomePage/HomePage.dart';
-import 'package:getx_sample/screens/SearchPage/SearchPage.dart';
+import 'package:getx_sample/screens/Attendance/HomePage.dart';
+import 'package:getx_sample/screens/HomeWork/SearchPage.dart';
+import 'package:getx_sample/screens/Materials/CategoryPage.dart';
+import 'package:getx_sample/screens/Profile/AccountPage_controller.dart';
+
 
 
 class Home extends StatefulWidget {
@@ -37,20 +38,20 @@ class _HomeState extends State<Home> {
         iconSize: 30,
         items: [
           BottomNavigationBarItem(
-            label: "Home",
-            icon: Icon(Icons.home),
+            label: "Attendance",
+            icon: Icon(Icons.calendar_today),
 
           ),
           BottomNavigationBarItem(
-            label: "Search",
-            icon: Icon(Icons.search),
+            label: "Homework",
+            icon: Icon(Icons.pages),
           ),
           BottomNavigationBarItem(
-            label: "Categories",
-            icon: Icon(Icons.grid_view),
+            label: "Materials",
+            icon: Icon(Icons.folder),
           ),
           BottomNavigationBarItem(
-            label: "My Account",
+            label: "Profile",
             icon: Icon(Icons.account_circle_outlined),
           ),
         ],
